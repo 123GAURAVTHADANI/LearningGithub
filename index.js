@@ -4,3 +4,5 @@ function handleBtn() {
 }
 
 handleBtn();
+
+console.log("Jai!!");
