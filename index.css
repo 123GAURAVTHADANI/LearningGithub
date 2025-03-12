@@ -1,5 +1,89 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+}
+#container1 {
+  position: relative;
+  width: 100px;
+  left: 150px;
+  height: 100px;
+  top: -100px;
+  background-color: black;
+  border-radius: 50%;
+}
+#container2 {
+  position: relative;
+  width: 100px;
+  left: 150px;
+  height: 100px;
+  top: -100px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#container::before {
+  position: absolute;
+  top: 50px;
+  content: "";
+  left: -50px;
+  z-index: -1;
+  width: 100px;
+  height: 1px;
+  background-color: red;
+}
+#container::after {
+  position: absolute;
+  top: 50px;
+  content: "";
+  left: 70px;
+  width: 100px;
+  z-index: -1;
+  height: 1px;
+  background-color: red;
+}
+
+#container1::before {
+  position: absolute;
+  top: 50px;
+  content: "";
+  left: -50px;
+  z-index: -1;
+  width: 100px;
+  height: 1px;
+  background-color: red;
+}
+#container1::after {
+  position: absolute;
+  top: 50px;
+  content: "";
+  left: 70px;
+  width: 100px;
+  z-index: -1;
+  height: 1px;
+  background-color: red;
+}
+
+#container2::before {
+  position: absolute;
+  top: 50px;
+  content: "";
+  right: -50px;
+  z-index: -1;
+  width: 100px;
+  height: 1px;
+  background-color: red;
+}
+
+#container2::after {
+  position: absolute;
+  top: 50px;
+  content: "";
+  right: -50px;
+  z-index: -1;
+  width: 100px;
+  height: 1px;
+  background-color: red;
 }
